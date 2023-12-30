@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <form id="loginForm" class="login-form">
+      <h2>Login</h2>
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" required>
+
+      <button type="button" onclick="login()">Login</button>
+
+      <a href="#" onclick="forgotPassword()">Forgot Password?</a>
+    </form>
+  </div>
+
+  <script>
+    function login() {
+      var name = document.getElementById("name").value;
+      var password = document.getElementById("password").value;
+
+      // Here, you can add authentication logic or send the data to a server.
+      // For now, we'll just show an alert with the entered values.
+      alert("Name: " + name + "\nPassword: " + password);
+    }
+
+    function forgotPassword() {
+      // Placeholder function for handling forgot password logic.
+      alert("Forgot Password? Implement your logic here.");
+    }
+  </script>
+
+</body>
+</html>
